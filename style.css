@@ -21,6 +21,7 @@ body {
   padding: 0 4.8rem;
   height: 10rem;
   display: flex;
+  background-color:black;
   justify-content: space-between;
   align-items: center;
   background-color: #e7f5ff;
@@ -68,9 +69,9 @@ body {
   display: none;
 }
 
-/* ===========================================
-Hero and Service Section Start
-======================================= */
+.section-hero{
+    margin-top: 10px;
+}
 .section-hero,
 .section-services {
   padding: 9.6rem 0;
@@ -150,7 +151,7 @@ Responsive Codes
     display: block;
   }
 
-  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+  .active .mobile-navbar-btn .mobile-nav-icon[name="grid-outline"] {
     display: none;
   }
 }
