@@ -25,12 +25,17 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #e7f5ff;
+  width: 100vw;
+  height: 15vh;
 }
 
-.header .logo {
-  height: 3rem;
+.logo{
+  margin-top: 10px 0px;
+  padding: .2em;
+  border-radius: 2px solid white;
+  width: 10vw;
+  height:9rem;
 }
-
 .navbar-list {
   display: flex;
   gap: 4.8rem;
@@ -110,7 +115,7 @@ Responsive Codes
   }
 
   .header .logo {
-    width: 40%;
+    width: 15%;
   }
 
   .navbar {
@@ -163,6 +168,6 @@ Responsive Codes
   }
 
   .header .logo {
-    width: 60%;
+    width: 20%;
   }
 }
