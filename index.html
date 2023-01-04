@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Info</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="style.css">
 
 
@@ -18,7 +20,9 @@
     </a>
 
     <nav class="navbar">
+
       <ul class="navbar-list">
+        <input type="search" class="search" placeholder="Search city">
         <li><a class="navbar-link" href="index.html">Home</a></li>
         <li><a class="navbar-link" href="#">About</a></li>
         <li><a class="navbar-link" href="#">Services</a></li>
@@ -40,43 +44,73 @@
   <main>
     <section>
       <div class="container">
-        <div class="weather-card">
-          <div class="card-info">
-            h1
-            <p>Delhi</p>
+        <div class="current-weather">
+          <div id="heading">
+            <span class="city">New Delhi</span>
           </div>
-          <div class="card-info">weather forecast</div>
+          <div class="weather-card">
+            <div class="card-info">
+              <p id="time"></p>
+              <br>
+              <p id="date"></p>
+            </div>
+            <div class="card-info">
+              <h1>5<sup>o</sup>Ceclius</h1>
+              <p>Humidity:10<sup>o</sup></p>
+              <p>Wind: 45<sup>o</sup>N</p>
+              <p>Sunrise: 7<sub>am</sub></p>
+              <p>Sunset:6:30<sub>pm</sub></p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="container1">
-        <table class="Weekly_weather-info">
-          <thead>
-            <tr class="weekday">
-              <th class="days">Date</th>
-              <th class="days">Monday</th>
-              <th class="days">Tuesday</th>
-              <th class="days">Wednesday</th>
-              <th class="days">Thursday</th>
-              <th class="days">Friday</th>
-              <th class="days">Saturday</th>
-              <th class="days">Sunday</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1st Janauary</td>
-              <td>sunrise: 7am</td>
-              <td>sunrise: 7am</td>
-              <td>sunrise: 7am</td>
-              <td>sunrise: 7am</td>
-              <td>sunrise: 7am</td>
-              <td>sunrise: 7am</td>
-              <td>sunrise: 7am</td>
-            </tr>
-          </tbody>
-        </table>
-       
+        <div class="heading">
+          <h1>New Delhi</h1>
+        </div>
+
+        <div id="Weekly-weather-info">
+          <div class="todays-weather" id="today">
+            <div class="weather-info">
+              <h1>Monday</h1>
+              <p>Date</p>
+              <p>Min.Temperature</p>
+              <p>Max.Temperature</p>
+            </div>
+            <div class="weather-info">
+              <h1>Tuesday</h1>
+              <p>Min.Temperature</p>
+              <p>Max.Temperature</p>
+            </div>
+            <div class="weather-info">
+              <h1>Wednesday</h1>
+              <p>Min.Temperature</p>
+              <p>Max.Temperature</p>
+            </div>
+            <div class="weather-info">
+              <h1>Thursday</h1>
+              <p>Min.Temperature</p>
+              <p>Max.Temperature</p>
+            </div>
+            <div class="weather-info">
+              <h1>Firday</h1>
+              <p>Min.Temperature</p>
+              <p>Max.Temperature</p>
+            </div>
+            <div class="weather-info">
+              <h1>Saturday</h1>
+              <p>Min.Temperature</p>
+              <p>Max.Temperature</p>
+            </div>
+            <div class="weather-info">
+              <h1>Sunday</h1>
+              <p>Min.Temperature</p>
+              <p>Max.Temperature</p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </section>
@@ -90,6 +124,9 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="script.js"></script>
+
+  <!-- script for api fetching -->
+  <script src="script_api_fetch.js"></script>
 </body>
 
 </html>
