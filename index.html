@@ -22,7 +22,10 @@
     <nav class="navbar">
 
       <ul class="navbar-list">
-        <input type="search" class="search" placeholder="Search city">
+        <form class="search">
+          <input type="text" placeholder="Search Location"  class="find_location">
+          <button type="submit" class="search_button">Search</button>
+        </form>
         <li><a class="navbar-link" href="index.html">Home</a></li>
         <li><a class="navbar-link" href="#">About</a></li>
         <li><a class="navbar-link" href="#">Services</a></li>
@@ -49,17 +52,25 @@
             <span class="city">New Delhi</span>
           </div>
           <div class="weather-card">
-            <div class="card-info">
-              <p id="time"></p>
-              <br>
-              <p id="date"></p>
+            <div class="date-time-info">
+                5 janauary,2023
             </div>
-            <div class="card-info">
-              <h1>5<sup>o</sup>Ceclius</h1>
-              <p>Humidity:10<sup>o</sup></p>
-              <p>Wind: 45<sup>o</sup>N</p>
-              <p>Sunrise: 7<sub>am</sub></p>
-              <p>Sunset:6:30<sub>pm</sub></p>
+            <span class="timezone"></span>
+            <div class="location-info">
+              <table>
+                <tr>
+                  <td>Temperature:</td>
+                  <td class="temperature"></td>
+                </tr>
+                <tr>
+                  <td>Humidity:</td>
+                  <td class="humidity"></td>
+                </tr>
+                <tr>
+                  <td>Condition:</td>
+                  <td class="condition"></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -67,7 +78,7 @@
 
       <div class="container1">
         <div class="heading">
-          <h1>New Delhi</h1>
+          <span class="city">New Delhi</span>
         </div>
 
         <div id="Weekly-weather-info">
